@@ -1,0 +1,881 @@
+html{
+    background: #000;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+.fixer{
+    left: 15rem;
+}
+::-webkit-scrollbar{
+    width:10px;
+
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px #ffffff;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #1a0303;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #4e0d0d;
+}
+
+
+header{
+    background: rgb(173, 173, 173);
+    background-size: cover;
+    width: 101%;
+    height: 6rem;
+    
+    
+}
+.callus{
+    position: absolute;
+    text-align: right;
+    right: 1rem;
+    align-items: left;
+    top: 3.1rem;
+    z-index: 3;
+    color: rgb(0, 0, 0);
+    word-spacing: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.callus-img{
+    position: absolute;
+    top: -.5rem;
+    height: 30px;
+    background-color: none;
+    right: 7rem;
+
+}
+.mailus{
+    position: absolute;
+    text-align: right;
+    right: 1rem;
+    align-items: left;
+    top: 5rem;
+    z-index: 3;
+    color: rgb(0, 0, 0);
+    word-spacing: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mailus-img{
+    position: absolute;
+    height: 27px;
+    top: -.3rem;
+    background-color: none;
+    right: 13.7rem;
+
+}
+a{
+    text-decoration: none;
+    color: ivory;
+    
+}
+a:hover{
+    color: rgb(104, 8, 8);
+    transition: .5s;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.m-header{
+    background: rgb(104, 101, 101);
+    font-family: Brush Script MT (cursive);
+    font-size: 2.1rem;
+    font-weight: bold;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    height: 7rem;
+    padding: .2rem;
+}
+.double-down{
+    height: 13px;
+    background-color: rgb(77, 74, 74);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: .4rem;
+}
+.double-down:hover{
+    background-color: rgb(105, 24, 24);
+    transition: .3s;
+}
+.white-h{ 
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    font-family: Brush Script MT (cursive);
+    font-size: 2.8rem;
+    font-weight: bold; 
+    position: absolute; 
+    left: 26rem;
+    animation: fadeUp .9s forwards;
+    padding: 1rem;
+    
+}
+.black-h{ 
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    font-size: 2.8rem;
+    font-family: Brush Script MT (cursive);
+    font-weight: bold;  
+    position: absolute;
+    left: 39rem;
+    padding: 1rem;
+    animation: fadeDown .9s forwards;
+    animation-delay: .7s;
+
+    
+    
+}
+.hero{
+    margin-top: 0px;
+    
+}
+.logo-img{
+    
+    position: absolute;
+    top: 1.5rem;
+    left: 1.3rem;
+    padding: 1rem;
+    
+
+
+}
+.site{
+    left: 4rem;
+    color: #FFF;
+    font-size: 11px;
+    padding: .7rem;
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+
+}
+
+.m-menu{
+    font-family: cursive;
+    text-align: center;
+    word-spacing: 1rem;
+    height: 0rem;  
+    padding: .5rem;
+    z-index: 1;
+    
+    
+}
+.current{
+    color: #790a0a;
+}
+.s-li{
+    background-color: rgb(0, 0, 0);
+    color: ivory;
+    width: 100%;
+    top: 0rem;
+    padding: .5rem;
+    left: 0rem;
+    position: absolute;
+}
+.drop:hover{
+    color: rgb(104, 8, 8);
+    transition: .1s;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 10%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: none;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;}
+
+
+
+ul#menu li{
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    padding: 1rem;
+}
+
+#frame {
+    margin: 0 auto;
+    width: 100.5%;
+    max-width: 100.5%;
+    text-align: center;
+    
+}
+
+  
+#frame input[type=radio] {
+    display: none;
+    margin-top: 0rem;
+}
+  
+#frame label {
+    cursor: pointer;
+    
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slides {
+    padding: 1px;
+    width: 100.5%;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(2, 2, 34);
+    position: inherit;
+    z-index: 1;
+    height: 33rem;
+}
+  
+
+#frame1:checked~#slides .inner {
+    margin-left: 0;
+}
+  
+#frame2:checked~#slides .inner {
+    margin-left: -100%;
+}
+  
+#frame3:checked~#slides .inner {
+    margin-left: -200%;
+}
+  
+#frame4:checked~#slides .inner {
+    margin-left: -300%;
+}
+  
+#slides .inner {
+    transition: margin-left 800ms 
+        cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 500px;
+}
+  
+#slides .frame {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #FFF;
+}
+  
+#slides .frame_1 {
+    background: url(images/big.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#slides .frame_2 {
+    background: url(images/menen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#slides .frame_3 {
+    background:url(images/pup4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#slides .frame_4 {
+    background: url(images/lulu.png);
+    background-size: inherit;
+    background-repeat: no-repeat;
+}
+  
+
+  
+#frame1:checked~#controls label:nth-child(2),
+#frame2:checked~#controls label:nth-child(3),
+#frame3:checked~#controls label:nth-child(4),
+#frame4:checked~#controls label:nth-child(1) {
+    background: url(images/marathon.jpg) no-repeat;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+  
+#frame1:checked~#controls label:nth-last-child(2),
+#frame2:checked~#controls label:nth-last-child(3),
+#frame3:checked~#controls label:nth-last-child(4),
+#frame4:checked~#controls label:nth-last-child(1) {
+    background: url(images/nip.jpg) no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+  
+#bullets {
+    margin: 10px;
+    text-align: center;
+}
+  
+#bullets label {
+    
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgb(255, 255, 255);
+    margin: 5px 10px;
+}
+
+
+#bullets label:hover{
+    background: red;
+    transition: .4s;
+    
+
+}
+  
+#frame1:checked~#bullets label:nth-child(1),
+#frame2:checked~#bullets label:nth-child(2),
+#frame3:checked~#bullets label:nth-child(3),
+#frame4:checked~#bullets label:nth-child(4) {
+    background: #444;
+}
+h2{
+    font-size: 2rem;
+    animation: fadeUp 1.1 forwards;
+    animation-delay: 3.4s;
+}
+
+/* FIRST SECTION*/
+.first-s{
+    height: 25rem;
+    width: 99%;
+    background: #FFF;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 2rem;
+    border-radius: .5%;
+
+}
+/* SECOND SECTION*/
+.second-s{
+    height: 25rem;
+    width: 99%;
+    background: #fff;
+    text-align: right;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 2rem;
+    border-radius: .5%;
+
+}
+/* THIRD SECTION*/
+.third-s{
+    height: 25rem;
+    width: 99%;
+    background: #FFF;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 2rem;
+    border-radius: .5%;
+
+}
+/*SECTION HEADING*/
+.writing{
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: bold;
+    
+    
+
+}
+.writing-left{
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: bold;
+    
+    
+
+}
+/*SECTION P*/
+.lefts{
+    font-size: 1rem;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 2rem;
+    color:rgb(88, 86, 86);
+
+    
+}
+.rights{
+    font-size: 1rem;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 2rem;
+    color:rgb(88, 86, 86);
+   
+
+}
+
+.links-right{
+    font-size: 1.4rem;
+    color: rgb(85, 45, 45);
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 2rem;
+    position: absolute;
+    margin-top: 4rem;
+    right: 1rem;
+    
+}
+.links-left{
+    font-size: 1.4rem;
+    width: 15%;
+    color: rgb(70, 43, 43);
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 2rem;
+    padding: 2rem;
+    
+}
+
+.links-right:hover{
+    color: rgb(170, 0, 0);
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 200;
+    
+}
+.links-left:hover{
+    color: rgb(170, 1, 1);
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 200;
+}
+h3{
+    padding-left: 2.4rem;
+    text-decoration: underline;
+}
+.btm-list{
+    position: absolute;
+    color: rgb(201, 190, 190);
+    left: 2.1rem;
+    text-align: left;
+    text-decoration: none;
+    z-index: 1;
+    font-size: 1.05rem;
+    word-spacing: 10px;
+}
+.btm-items{
+    list-style-type: none;
+    left: .7rem;
+
+}
+.btm-listrt{
+    position: absolute;
+    color: rgb(201, 190, 190);
+    right: 16rem;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    font-size: 1rem;
+    
+}
+.btm-listrtl{
+    position: absolute;
+    color: rgb(201, 190, 190);
+    right: 2.1rem;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 1;
+    font-size: 1rem;
+}
+ul{
+    display: inline-block;
+}
+
+
+
+/*FOOTER*/
+footer{
+    height: 15rem;
+    width: 99%;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: #FFF;
+}
+
+.f-text{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: snow;
+}
+
+
+.email{
+    width: 19rem;
+    height: 1.8rem;
+    margin-right: .7rem;
+    padding: 0rem;
+    border: 0rem;
+  
+    
+}
+
+
+.submit-btn{
+  background-color: rgb(184, 8, 8);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30%;
+
+}
+a{
+    text-decoration: none;
+    
+}
+
+.insta{
+    color: ivory;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: #575555;
+    transition: .6s;
+}
+.top-i{
+    display: block;
+    margin-top: -2rem;
+    font-size: 2rem;
+    padding: 0rem;
+    color: rgb(172, 2, 2);
+    margin-left: 37.4rem;
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+.top-i:hover{
+    color: rgb(122, 2, 2);
+}
+
+/*social icons*/
+
+.f-li{
+    list-style: none;
+    /*Get rid of bullets*/
+    margin-right: 2.7rem;
+    font-size: 1.9rem;
+    display: inline;
+}
+
+.f-li:hover{
+    color: #ff0000;
+    transition: .4s;
+}
+hr{
+    margin-top: 7rem;
+}
+/*animations*/
+@keyframes fadeDown{
+    0%{
+        transform: translateY(-1rem);
+
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeUp{
+    0%{
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    50%{
+        opacity: .2;
+    }
+    75%{
+        opacity: .6;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@media screen and ( max-width: 375px){
+    header{
+        background: rgb(173, 173, 173);
+        background-size: cover;
+        width: 375px;
+        height: 2rem;
+        
+        
+    }
+    .callus{
+        font-size: 15px;
+        word-spacing: 1px;
+        
+    }
+    .callus-img{
+        height: 10px;
+        right: 4rem;
+    
+    }
+    .mailus{
+        
+        right: 0rem;
+        top: 2rem;
+        word-spacing: 0px;
+        font-size: 15px;
+        
+    }
+    .mailus-img{
+        height: 15px;
+        top: -.3rem;
+        right: 5rem;
+    
+    }
+   
+    .m-header{
+        font-size: .9rem;
+        height: 3rem;
+    }
+    .double-down{
+        height: 8px;
+    }
+    .double-down:hover{
+        background-color: rgb(105, 24, 24);
+        transition: .3s;
+    }
+    .white-h{ 
+        font-size: .9rem;
+        left: 3rem;
+        
+    }
+    .black-h{ 
+      
+        font-size: .9rem;
+        left: 7rem;
+    
+        
+        
+    }
+    .logo-img{
+        top: 2.3rem;
+        left: 1.3rem;
+
+    }
+    .site{
+        left: 3rem;
+        font-size: 7px;
+        padding: .7rem;
+        
+    
+    }
+    
+    .m-menu{
+        font-family: cursive;
+        text-align: center;
+        word-spacing: 1rem;
+        height: 0rem;  
+        padding: .5rem;
+        z-index: 1;
+        
+        
+    }
+    .current{
+        color: #790a0a;
+    }
+    .s-li{
+        background-color: rgb(0, 0, 0);
+        color: ivory;
+        width: 100%;
+        top: 0rem;
+        padding: .5rem;
+        left: 0rem;
+        position: absolute;
+    }
+    .drop:hover{
+        color: rgb(104, 8, 8);
+        transition: .1s;
+        cursor: pointer;
+        font-weight: bolder;
+    
+    }
+    
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        border-radius: 10%;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        text-align: left;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+          background-color: none;}
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+          display: block;}
+    
+    
+    
+    ul#menu li{
+        text-decoration: none;
+        list-style: none;
+        display: inline;
+        padding: 1rem;
+    }
+    
+    #frame {
+        margin: 0 auto;
+        width: 100.5%;
+        max-width: 100.5%;
+        text-align: center;
+        
+    
+
+    }
+    h3{
+        padding-left: 2.4rem;
+        text-decoration: underline;
+    }
+    .btm-list{
+        left: 3rem;
+        font-size: .9rem;
+        text-align: center;
+        word-spacing: 0px;
+        margin-top: 27rem;
+    }
+    .btm-listrt{
+        left: .6rem;
+        font-size: .8rem;
+        margin-top: 15rem;
+        display: inline-block;
+        
+    }
+    .btm-listrtl{
+        right: 1rem;
+        font-size: 1rem;
+        margin-top: 15rem;
+    }
+    
+    
+    
+    /*FOOTER*/
+    footer{
+        height: 15rem;
+        width: 99%;
+        background: rgb(0, 0, 0);
+        text-align: center;
+        padding: 1rem;
+        color: #FFF;
+    }
+    
+    .f-text{
+        text-align: center;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: lighter;
+        color: snow;
+    }
+    
+    
+    .email{
+        width: 12rem;
+        height: 1.8rem;
+        margin-right: .9rem;
+        padding: 0rem;
+        border: 0rem;
+      
+        
+    }
+    .top-i{
+        margin-left: 10rem;
+        
+    }
+    /*social icons*/
+    
+    .f-li{
+        list-style: none;
+        /*Get rid of bullets*/
+        margin-right: 2.3rem;
+        font-size: 2rem;
+        display: inline;
+    }
+    hr{
+        margin-top: 25rem;
+    }
+}
